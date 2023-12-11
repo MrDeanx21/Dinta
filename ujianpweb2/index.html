@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Kota Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>CRUD Kota Indonesia</h2>
+
+    <form id="cityForm">
+        <label for="cityName">Nama Kota:</label>
+        <input type="text" id="cityName" required>
+        <button type="button" onclick="addOrUpdateCity()">Tambah Kota</button>
+        <input type="hidden" id="cityIndex">
+    </form>
+
+    <table id="cityTable">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Kota</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
